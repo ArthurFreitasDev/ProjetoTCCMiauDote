@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoTCCMiauDote.Views.Login"
+             Title=""
+             BackgroundColor="#6C3CCB">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#5CE1E6"/>
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="White"/>
+        </Style>
+    </ContentPage.Resources>
+    
+    <StackLayout Margin="0,80,0,0">
+        <Grid RowDefinitions="*,*,*,*,*,*,*" ColumnDefinitions="*,*,*">
+            <Image Source="Resources/Images/Logonome.png" Grid.Column="1" Grid.Row="0"/>
+            <Image Source="Resources/Images/Logo.png" Grid.Column="1" Grid.Row="1" MaximumWidthRequest="100" Margin="0,0,0,50"/>
+            <Entry Placeholder="Email" x:Name="Login_Email" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Margin="30,0,30,5"/>
+            <Entry Placeholder="Senha" x:Name="Login_Senha" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" Margin="30,0,30,50"/>
+            <Button Text="Login" Clicked="btnLogin" Grid.Column="1" Grid.Row="4" BackgroundColor="#5CE1E6" TextColor="#6C3CCB" FontSize="20"/>
+            <Button Text="Ainda não é cadastrado?" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="3" HorizontalOptions="Center" BackgroundColor="Transparent" Margin="0,0,0,-20" Clicked="Login_CriarConta"/>
+            <Button Text="Crie uma conta!" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3" HorizontalOptions="Center" BackgroundColor="Transparent" Padding="0,0,0,0" Clicked="Login_CriarConta"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
