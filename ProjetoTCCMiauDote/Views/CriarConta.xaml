@@ -27,11 +27,11 @@
             <Entry Placeholder="Sua casa é apropriada para receber cães ou gatos?" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="4"/>
             <Entry Placeholder="CEP" Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2"/>
             <Entry Placeholder="Telefone" Grid.Column="2" Grid.Row="9" Grid.ColumnSpan="2"/>
-            <Entry Placeholder="Cidade" Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="2"/>
-            <Entry Placeholder="Estado" Grid.Column="2" Grid.Row="10" Grid.ColumnSpan="4"/>
+            <Entry Placeholder="Cidade" Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="3"/>
+            <Entry Placeholder="Estado" Grid.Column="3" Grid.Row="10"/>
             <Entry Placeholder="Bairro" Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="4"/>
-            <Entry Placeholder="Rua" Grid.Column="0" Grid.Row="12" Grid.ColumnSpan="2"/>
-            <Entry Placeholder="Nº" Grid.Column="2" Grid.Row="12" Grid.ColumnSpan="2"/>
+            <Entry Placeholder="Rua" Grid.Column="0" Grid.Row="12" Grid.ColumnSpan="3"/>
+            <Entry Placeholder="Nº" Grid.Column="3" Grid.Row="12"/>
             <Entry Placeholder="Crie sua senha" Grid.Column="0" Grid.Row="13" Grid.ColumnSpan="4"/>
             <Entry Placeholder="Anexar Comprovante de Residência" Grid.Column="0" Grid.Row="14" Grid.ColumnSpan="4"/>
             <Button Text="Login" Grid.Column="1" Grid.Row="15" BackgroundColor="#5CE1E6" TextColor="#6C3CCB" FontSize="20" Grid.ColumnSpan="2" Margin="0,15,0,0"/>
