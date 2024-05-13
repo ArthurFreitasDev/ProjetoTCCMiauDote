@@ -2,11 +2,40 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetoTCCMiauDote.Views.CriarConta"
-             Title="CriarConta">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title=""
+             BackgroundColor="#6C3CCB">
+
+    <ContentPage.Resources>
+        <Style TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="MaximumHeightRequest" Value="30"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout Margin="20,0,20,0">
+        <Grid RowDefinitions="*,100,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*" ColumnDefinitions="*,*,*,*">
+            <Image Source="Resources/Images/Logonome.png" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2"/>
+            <Image Source="Resources/Images/Logo.png" Grid.Column="1" Grid.Row="1" MaximumWidthRequest="100" Grid.ColumnSpan="2" Margin="0,0,0,0"/>
+            <Entry Placeholder="Nome Completo" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="4"/>
+            <Entry Placeholder="Nascimento" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"/>
+            <Entry Placeholder="Email" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2"/>
+            <Entry Placeholder="Porque quer adotar?" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="4"/>
+            <Entry Placeholder="Quantas pessoas moram com você?" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="4"/>
+            <Entry Placeholder="Qual sua renda familiar? (Em salários mínimos)" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="4"/>
+            <Entry Placeholder="Você tem ou já teve cães ou gatos?" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="4"/>
+            <Entry Placeholder="Sua casa é apropriada para receber cães ou gatos?" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="4"/>
+            <Entry Placeholder="CEP" Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2"/>
+            <Entry Placeholder="Telefone" Grid.Column="2" Grid.Row="9" Grid.ColumnSpan="2"/>
+            <Entry Placeholder="Cidade" Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="2"/>
+            <Entry Placeholder="Estado" Grid.Column="2" Grid.Row="10" Grid.ColumnSpan="4"/>
+            <Entry Placeholder="Bairro" Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="4"/>
+            <Entry Placeholder="Rua" Grid.Column="0" Grid.Row="12" Grid.ColumnSpan="2"/>
+            <Entry Placeholder="Nº" Grid.Column="2" Grid.Row="12" Grid.ColumnSpan="2"/>
+            <Entry Placeholder="Crie sua senha" Grid.Column="0" Grid.Row="13" Grid.ColumnSpan="4"/>
+            <Entry Placeholder="Anexar Comprovante de Residência" Grid.Column="0" Grid.Row="14" Grid.ColumnSpan="4"/>
+            <Button Text="Login" Grid.Column="1" Grid.Row="15" BackgroundColor="#5CE1E6" TextColor="#6C3CCB" FontSize="20" Grid.ColumnSpan="2" Margin="0,15,0,0"/>
+            <Button Text="Fazer Login!" Grid.Column="0" Grid.Row="16" Grid.ColumnSpan="4" HorizontalOptions="Center" BackgroundColor="Transparent"/>
+            <Button Text="Crie uma conta!" Grid.Column="0" Grid.Row="17" Grid.ColumnSpan="4" HorizontalOptions="Center" BackgroundColor="Transparent" Margin="0,-30,0,0"/>
+        </Grid>
+    </StackLayout>
 </ContentPage>
