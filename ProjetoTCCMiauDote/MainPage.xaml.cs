@@ -1,19 +1,18 @@
-﻿using ProjetoTCCMiauDote.Views;
+﻿using Microsoft.Maui.Layouts;
+using ProjetoTCCMiauDote.Views;
 
 namespace ProjetoTCCMiauDote
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private async void ImageButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new CriarConta());
+            await Navigation.PushAsync(new MainFlyoutPage());
         }
     }
 

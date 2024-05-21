@@ -61,8 +61,11 @@
 	  <MauiImage Remove="Resources\Images\IconeCachorro.png" />
 	  <MauiImage Remove="Resources\Images\IconeCasinha.png" />
 	  <MauiImage Remove="Resources\Images\IconeGato.png" />
+	  <MauiImage Remove="Resources\Images\Instagram.png" />
 	  <MauiImage Remove="Resources\Images\Logo.png" />
 	  <MauiImage Remove="Resources\Images\Logonome.png" />
+	  <MauiImage Remove="Resources\Images\TresBarras.png" />
+	  <MauiImage Remove="Resources\Images\Whatsapp.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -71,8 +74,11 @@
 	  <None Remove="Resources\Images\IconeCachorro.png" />
 	  <None Remove="Resources\Images\IconeCasinha.png" />
 	  <None Remove="Resources\Images\IconeGato.png" />
+	  <None Remove="Resources\Images\Instagram.png" />
 	  <None Remove="Resources\Images\Logo.png" />
 	  <None Remove="Resources\Images\Logonome.png" />
+	  <None Remove="Resources\Images\TresBarras.png" />
+	  <None Remove="Resources\Images\Whatsapp.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -91,10 +97,19 @@
 	  <EmbeddedResource Include="Resources\Images\IconeGato.png">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </EmbeddedResource>
+	  <EmbeddedResource Include="Resources\Images\Instagram.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
 	  <EmbeddedResource Include="Resources\Images\Logo.png">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </EmbeddedResource>
 	  <EmbeddedResource Include="Resources\Images\Logonome.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Resources\Images\TresBarras.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Resources\Images\Whatsapp.png">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </EmbeddedResource>
 	</ItemGroup>
@@ -106,12 +121,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="MainFlyoutPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\CriarConta.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Login.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Models\" />
 	</ItemGroup>
 
 </Project>
