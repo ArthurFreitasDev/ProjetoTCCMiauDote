@@ -12,7 +12,7 @@ namespace ProjetoTCCMiauDote
 
         private async void ImageButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainFlyoutPage());
+            await Navigation.PushAsync(new Login());
         }
     }
 

@@ -5,6 +5,7 @@
              BackgroundColor="White"
              Title="">
 
+
     <ScrollView>
         <StackLayout>
             <Grid RowDefinitions="70,*,*,*,*,*,*,*,*,*,*,*,*" ColumnDefinitions="*,*,*" Margin="0">
@@ -53,4 +54,9 @@
         </StackLayout>
     </ScrollView>
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+                     IconImageSource="Resources/images/logo.png"/>
+    </ContentPage.ToolbarItems>
+    
 </ContentPage>
