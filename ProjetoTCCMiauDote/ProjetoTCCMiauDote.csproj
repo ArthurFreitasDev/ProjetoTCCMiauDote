@@ -63,6 +63,7 @@
 	  <None Remove="Resources\Images\IconeGato.png" />
 	  <None Remove="Resources\Images\Instagram.png" />
 	  <None Remove="Resources\Images\Logo.png" />
+	  <None Remove="Resources\Images\logoenome.png" />
 	  <None Remove="Resources\Images\Logonome.png" />
 	  <None Remove="Resources\Images\TresBarras.png" />
 	  <None Remove="Resources\Images\Whatsapp.png" />
@@ -72,19 +73,20 @@
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+		<PackageReference Include="MySql.Data" Version="8.4.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\CriarConta.xaml">
+	  <MauiXaml Update="CriarConta.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Login.xaml">
+	  <MauiXaml Update="Login.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Models\" />
+	  <Folder Include="Views\" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -107,6 +109,9 @@
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </MauiImage>
 	  <MauiImage Update="Resources\Images\logo.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </MauiImage>
+	  <MauiImage Update="Resources\Images\logoenome.png">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </MauiImage>
 	  <MauiImage Update="Resources\Images\logonome.png">

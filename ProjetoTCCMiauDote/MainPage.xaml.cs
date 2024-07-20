@@ -1,5 +1,5 @@
 ﻿using Microsoft.Maui.Layouts;
-using ProjetoTCCMiauDote.Views;
+using ProjetoTCCMiauDote.Models;
 
 namespace ProjetoTCCMiauDote
 {
@@ -8,6 +8,11 @@ namespace ProjetoTCCMiauDote
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void ContentPage_Loaded(object sender, EventArgs e)
+        {
+            
         }
 
         private async void ImageButton_Clicked(object sender, EventArgs e)

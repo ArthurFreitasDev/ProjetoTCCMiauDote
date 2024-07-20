@@ -2,51 +2,47 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetoTCCMiauDote.MainPage"
+             xmlns:local="clr-namespace:ProjetoTCCMiauDote"
              BackgroundColor="White"
-             Title="">
+             Title=""
+             Shell.BackgroundColor="#6C3CCB"
+             Loaded="ContentPage_Loaded">
 
 
     <ScrollView>
         <StackLayout>
-            <Grid RowDefinitions="70,*,*,*,*,*,*,*,*,*,*,*,*" ColumnDefinitions="*,*,*" Margin="0">
-                <Grid BackgroundColor="#6C3CCB" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Margin="0" Padding="0" ColumnDefinitions="*,3*,*">
-                    <ImageButton Source="Resources/Images/Logo.png" MinimumHeightRequest="50" Grid.Column="0" BackgroundColor="Transparent"/>
-                    <ImageButton Source="Resources/Images/Logonome.png" WidthRequest="150" Grid.Column="1" BackgroundColor="Transparent"/>
-                    <ImageButton Source="Resources/Images/TresBarras.png" WidthRequest="40" Grid.Column="2" BackgroundColor="Transparent" Clicked="ImageButton_Clicked"/>
-                </Grid>
-                <Image Source="Resources/Images/Banner1.png" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Margin="30"/>
+            <Grid RowDefinitions="*,*,*,*,*,*,*,*,*,*,*,*" ColumnDefinitions="*,*,*" Margin="0">
                 
-                <Grid ColumnDefinitions="*,*,*" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Margin="20,30,20,30">
-                    <Ellipse Grid.Column="0" Grid.Row="0" BackgroundColor="#6C3CCB"/>
+                <Image Source="Resources/Images/Banner1.png" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Margin="30"/>
+                
+                <Grid ColumnDefinitions="*,*,*" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Margin="20,30,20,30">
+                    
                     <Image Grid.Column="0" Grid.Row="0" Source="Resources/Images/IconeCachorro.png"/>
 
-                    <Ellipse Grid.Column="1" Grid.Row="0" BackgroundColor="#6C3CCB"/>
+                    
                     <Image Grid.Column="1" Grid.Row="0" Source="Resources/Images/IconeCasinha.png"/>
 
-                    <Ellipse Grid.Column="2" Grid.Row="0" BackgroundColor="#6C3CCB"/>
+                    
                     <Image Grid.Column="2" Grid.Row="0" Source="Resources/Images/IconeGato.png"/>
                 </Grid>
 
-                <Label Text="Cães" Grid.Column="0" Grid.Row="3" FontSize="30"/>
-                <ImageButton Source="Resources/Images/Logo.png" Grid.Column="0" Grid.Row="4" BackgroundColor="#6C3CCB" Margin="10,20,10,15"/>
-                <ImageButton Source="Resources/Images/Logo.png" Grid.Column="1" Grid.Row="4" BackgroundColor="#6C3CCB" Margin="10,20,10,15"/>
-                <ImageButton Source="Resources/Images/Logo.png" Grid.Column="2" Grid.Row="4" BackgroundColor="#6C3CCB" Margin="10,20,10,15"/>
+                <Label Text="Cães" Grid.Column="0" Grid.Row="2" FontSize="30"/>
+                <ImageButton Source="Resources/Images/Logo.png" Grid.Column="0" Grid.Row="3" BackgroundColor="#6C3CCB" Margin="10,20,10,15"/>
+                <ImageButton Source="Resources/Images/Logo.png" Grid.Column="1" Grid.Row="3" BackgroundColor="#6C3CCB" Margin="10,20,10,15"/>
+                <ImageButton Source="Resources/Images/Logo.png" Grid.Column="2" Grid.Row="3" BackgroundColor="#6C3CCB" Margin="10,20,10,15"/>
 
-                <Label Text="Gatos" Grid.Column="0" Grid.Row="5" FontSize="30"/>
-                <ImageButton Source="Resources/Images/Logo.png" Grid.Column="0" Grid.Row="6" BackgroundColor="#6C3CCB" Margin="10,20,10,15"/>
-                <ImageButton Source="Resources/Images/Logo.png" Grid.Column="1" Grid.Row="6" BackgroundColor="#6C3CCB" Margin="10,20,10,15"/>
-                <ImageButton Source="Resources/Images/Logo.png" Grid.Column="2" Grid.Row="6" BackgroundColor="#6C3CCB" Margin="10,20,10,15"/>
+                <Label Text="Gatos" Grid.Column="0" Grid.Row="4" FontSize="30"/>
+                <ImageButton Source="Resources/Images/Logo.png" Grid.Column="0" Grid.Row="5" BackgroundColor="#6C3CCB" Margin="10,20,10,15"/>
+                <ImageButton Source="Resources/Images/Logo.png" Grid.Column="1" Grid.Row="5" BackgroundColor="#6C3CCB" Margin="10,20,10,15"/>
+                <ImageButton Source="Resources/Images/Logo.png" Grid.Column="2" Grid.Row="5" BackgroundColor="#6C3CCB" Margin="10,20,10,15"/>
 
-                <Label Text="Sobre Nós" Grid.Column="0" Grid.Row="7" FontSize="30"/>
-                <Frame Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="3" BackgroundColor="#6C3CCB" CornerRadius="0">
+                <Label Text="Sobre Nós" Grid.Column="0" Grid.Row="6" FontSize="25"/>
+                <Frame Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="3" BackgroundColor="#6C3CCB" CornerRadius="0">
                     <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
-                        <Label Text="Somos uma equipe que desenvolveu o aplicativo MI-AU DOTE 
-                               visando a melhora no processo de adoção e a diminuição no 
-                               abandono. Amamos pets e a qualidade de vida dos nossos 
-                               amiguinhos de quatro patas é mutito importante para nós." 
+                        <Label Text="Somos uma equipe que desenvolveu o aplicativo MI-AU DOTE visando a melhora no processo de adoção e a diminuição no abandono. Amamos pets e a qualidade de vida dos nossos amiguinhos de quatro patas é mutito importante para nós." 
                                Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontFamily="Arial" TextColor="White" x:Name="txtTexto"/>
 
-                        <Image Source="Resources/Images/WhatsApp.png" Grid.Row="1" Grid.Column="0" MaximumWidthRequest="150" Margin="-60,0,0,0"/>
+                        <Image Source="Resources/Images/WhatsApp.png" Grid.Row="1" Grid.Column="0" MaximumWidthRequest="150"/>
                         <Image Source="Resources/Images/Instagram.png" Grid.Row="1" Grid.Column="1" MaximumHeightRequest="27"/>
                     </Grid>
                 </Frame>
@@ -54,9 +50,13 @@
         </StackLayout>
     </ScrollView>
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem 
-                     IconImageSource="Resources/images/logo.png"/>
-    </ContentPage.ToolbarItems>
+    <Shell.TitleView>
+        <StackLayout HorizontalOptions="Fill">
+            <Grid ColumnDefinitions="3*,*">
+                <Image Source="Resources/Images/logonome.png" WidthRequest="160" Grid.Column="0"/>
+                <Image Source="Resouces/Images/Logo.png" WidthRequest="50" Grid.Column="1" Margin="20,0,0,0"/>
+            </Grid>
+        </StackLayout>
+    </Shell.TitleView>
     
 </ContentPage>

@@ -7,9 +7,14 @@
     Shell.FlyoutBehavior="Flyout"
     Title="ProjetoTCCMiauDote">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <FlyoutItem Title="Home">
+        <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Cadastro">
+        <ShellContent Title="Cadastro" ContentTemplate="{DataTemplate local:CriarConta}" Route="CriarConta"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Login">
+        <ShellContent Title="Login" ContentTemplate="{DataTemplate local:Login}" Route="Login"/>
+    </FlyoutItem>
 
 </Shell>
