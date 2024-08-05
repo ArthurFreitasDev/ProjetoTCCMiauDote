@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class BorderlessEntry
+namespace ProjetoTCCMiauDote.Classes
 {
-    public BorderlessEntry()
+    public class MainPageModel
     {
-
+        public string MainPageBanner { get; set; }
     }
 }

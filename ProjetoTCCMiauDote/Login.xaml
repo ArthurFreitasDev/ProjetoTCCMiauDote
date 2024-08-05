@@ -19,7 +19,7 @@
 
     <StackLayout Margin="0,80,0,0">
         <Grid RowDefinitions="*,*,*,*,*,*" ColumnDefinitions="*,*,*">
-            <Label Text="Login" Grid.Column="1" Grid.Row="0" HorizontalOptions="Center" TextColor="White" FontSize="40" FontFamily="Arial" Margin="15"/>
+            <Label Text="Login" Grid.Column="1" Grid.Row="0" HorizontalOptions="Center" TextColor="White" FontSize="35" FontFamily="Arial" Margin="15"/>
             <Frame Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Margin="30,0,30,5"/>
             <Entry Placeholder="Email" x:Name="Login_Email" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Margin="30,0,30,5"/>
             <Frame Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Margin="30,0,30,50"/>

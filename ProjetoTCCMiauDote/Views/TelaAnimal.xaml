@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoTCCMiauDote.Views.TelaAnimal"
+             Title="TelaAnimal"
+             Shell.BackgroundColor="#6C3CCB"
+             BackgroundColor="White">
+
+    <VerticalStackLayout>
+        <Grid RowDefinitions="*,*,*,*,*,*" ColumnDefinitions="*,*,*,*" Margin="10,30,10,0">
+            <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#6C3CCB" WidthRequest="160">
+                <Image Source="Resources/Images/modelofoto3x4.png"/>
+            </Frame>
+            <Grid RowDefinitions="20,20,*" ColumnDefinitions="*,*" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Margin="0,5,0,0">
+                <Label Text="Nome:" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Pedrinho" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Descriçao:" Grid.Row="1" Grid.Column="0"/>
+                <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"/>
+            </Grid>
+            <Frame Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="1" BackgroundColor="#6C3CCB" Margin="0,10,0,0">
+                <Grid RowDefinitions="*,*,*,*,*,*,*,*,*,*" ColumnDefinitions="*,*">
+                    <Label Text="Sexo:" Grid.Column="0" Grid.Row="0" FontSize="20" TextColor="White"/>
+                    <Label Text="" Grid.Column="1" Grid.Row="0" FontSize="20" TextColor="White"/>
+                    <Label Text="Idade:" Grid.Column="0" Grid.Row="1" FontSize="20" TextColor="White"/>
+                    <Label Text="" Grid.Column="1" Grid.Row="1" FontSize="20" TextColor="White"/>
+                    <Label Text="Porte:" Grid.Column="0" Grid.Row="2" FontSize="20" TextColor="White"/>
+                    <Label Text="" Grid.Column="1" Grid.Row="2" FontSize="20" TextColor="White"/>
+                    <Label Text="Cor:" Grid.Column="0" Grid.Row="3" FontSize="20" TextColor="White"/>
+                    <Label Text="" Grid.Column="1" Grid.Row="3" FontSize="20" TextColor="White"/>
+                    <Label Text="Doenças:" Grid.Column="0" Grid.Row="4" FontSize="20" TextColor="White"/>
+                    <Label Text="" Grid.Column="1" Grid.Row="4" FontSize="20" TextColor="White"/>
+                    <Label Text="Vacinação:" Grid.Column="0" Grid.Row="5" FontSize="20" TextColor="White"/>
+                    <Label Text="" Grid.Column="1" Grid.Row="5" FontSize="20" TextColor="White"/>
+                    <Label Text="Raça" Grid.Column="0" Grid.Row="6" FontSize="20" TextColor="White"/>
+                    <Label Text="" Grid.Column="1" Grid.Row="6" FontSize="20" TextColor="White"/>
+                    <Label Text="Cidade:" Grid.Column="0" Grid.Row="7" FontSize="20" TextColor="White"/>
+                    <Label Text="" Grid.Column="1" Grid.Row="7" FontSize="20" TextColor="White"/>
+                    <Label Text="Abrigo:" Grid.Column="0" Grid.Row="8" FontSize="20" TextColor="White"/>
+                    <Label Text="" Grid.Column="1" Grid.Row="8" FontSize="20" TextColor="White"/>
+                    <Label Text="Avaliação do abrigo:" Grid.Column="0" Grid.Row="9" FontSize="20" TextColor="White"/>
+                    <Label Text="" Grid.Column="1" Grid.Row="9" FontSize="20" TextColor="White"/>
+                </Grid>
+            </Frame>
+            <Button Text="Adotar!" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3" Margin="0,15,0,0"/>
+        </Grid>
+    </VerticalStackLayout>
+
+    <Shell.TitleView>
+        <StackLayout HorizontalOptions="Fill">
+            <Grid ColumnDefinitions="3*,*">
+                <Image Source="Resources/Images/logonome.png" WidthRequest="160" Grid.Column="0"/>
+                <Image Source="Resouces/Images/Logo.png" WidthRequest="50" Grid.Column="1" Margin="20,0,0,0"/>
+            </Grid>
+        </StackLayout>
+    </Shell.TitleView>
+</ContentPage>
