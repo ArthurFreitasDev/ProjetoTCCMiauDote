@@ -29,7 +29,7 @@
                     <ImageButton Grid.Column="0" Grid.Row="0" Source="Resources/Images/IconeCachorro.png" Clicked="ImageButton_Clicked_1" HeightRequest="120"/>
 
 
-                    <ImageButton Grid.Column="1" Grid.Row="0" Source="Resources/Images/IconeCasinha.png" HeightRequest="120"/>
+                    <ImageButton Grid.Column="1" Grid.Row="0" Source="Resources/Images/IconeCasinha.png" HeightRequest="120" Clicked="ComprasPetClicked"/>
 
 
                     <ImageButton Grid.Column="2" Grid.Row="0" Source="Resources/Images/IconeGato.png" HeightRequest="120"/>
@@ -70,5 +70,4 @@
             </Grid>
         </StackLayout>
     </Shell.TitleView>
-    
 </ContentPage>

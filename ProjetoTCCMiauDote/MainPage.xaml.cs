@@ -28,6 +28,11 @@ namespace ProjetoTCCMiauDote
         {
             await Navigation.PushAsync(new TelaAnimal());
         }
+
+        private async void ComprasPetClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ComprasPet());
+        }
     }
 
 }

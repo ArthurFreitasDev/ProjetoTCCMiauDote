@@ -16,5 +16,8 @@
     <FlyoutItem Title="Login">
         <ShellContent Title="Login" ContentTemplate="{DataTemplate local:Login}" Route="Login"/>
     </FlyoutItem>
+    <FlyoutItem Title="Adicionar Funcionario">
+        <ShellContent Title="Adicionar Funcionario" ContentTemplate="{DataTemplate local:AdicionarFuncionario}" Route="AdicionarFuncionario"/>
+    </FlyoutItem>
 
 </Shell>
