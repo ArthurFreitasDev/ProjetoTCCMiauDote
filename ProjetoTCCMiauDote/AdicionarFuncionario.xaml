@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoTCCMiauDote.AdicionarFuncionario"
+             Title="AdicionarFuncionario"
+             BackgroundColor="#6C3CCB"
+             Shell.BackgroundColor="#6C3CCB">
+    
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#5CE1E6"/>
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="Margin" Value="10,10,0,10"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout Margin="0,80,0,0">
+        <Grid RowDefinitions="*,*,*,*,*,*" ColumnDefinitions="*,*,*">
+            <Label Text="Adicionar Funcionário" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" HorizontalOptions="Center" TextColor="White" FontSize="30" FontFamily="Arial" Margin="15"/>
+            <Frame Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Margin="30,0,30,5"/>
+            <Entry Placeholder="Nome" x:Name="FuncionarioNome" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Margin="30,0,30,5"/>
+            <Frame Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Margin="30,0,30,5"/>
+            <Entry Placeholder="Email" x:Name="FuncionarioEmail" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Margin="30,0,30,5"/>
+            <Frame Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" Margin="30,0,30,5"/>
+            <Entry Placeholder="Telefone" x:Name="FuncionarioTelefone" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" Margin="30,0,30,5"/>
+            <Frame Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" Margin="30,0,30,5"/>
+            <Entry Placeholder="Crie sua senha" x:Name="FuncionarioSenha" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" Margin="30,0,30,5"/>
+            <Button Text="Adicionar"  Grid.Column="1" Grid.Row="5" BackgroundColor="#5CE1E6" TextColor="#6C3CCB" FontSize="20" Clicked="AdicionarFuncionario_Clicked"/>
+
+
+        </Grid>
+    </StackLayout>
+
+    <Shell.TitleView>
+        <StackLayout HorizontalOptions="Fill">
+            <Grid ColumnDefinitions="3*,*">
+                <Image Source="Resources/Images/logonome.png" WidthRequest="160" Grid.Column="0"/>
+                <Image Source="Resouces/Images/Logo.png" WidthRequest="50" Grid.Column="1" Margin="20,0,0,0"/>
+            </Grid>
+        </StackLayout>
+    </Shell.TitleView>
+</ContentPage>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoTCCMiauDote.CriarConta"
+             xmlns:local="clr-namespace:ProjetoTCCMiauDote"
+             Title=""
+             BackgroundColor="#6C3CCB"
+             Shell.BackgroundColor="#6C3CCB">
+
+    <ContentPage.Resources>
+        <Style TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="Margin" Value="10,10,0,10"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout Margin="0,0,10,0">
+            <Grid RowDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*" ColumnDefinitions="*,*,*,*">
+                <Label Text="Cadastro" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="Center" TextColor="White" FontSize="40" FontFamily="Arial"/>
+
+                <Frame Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Margin="10,10,0,10"/>
+                <Entry Placeholder="Nome" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" x:Name="txtNome"/>
+
+                <Frame Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="4" Margin="10,10,0,10"/>
+                <Entry Placeholder="Email" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="4" Keyboard="Email" x:Name="txtEmail"/>
+
+                <Frame Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Margin="10,10,0,10"/>
+                <Entry Placeholder="Telefone" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" x:Name="txtTelefone"/>
+
+                <Frame Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2" Margin="10,10,0,10"/>
+                <Entry Placeholder="Senha" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2" IsPassword="True" x:Name="txtSenha"/>
+
+                <Frame Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="4" Margin="10,10,0,10"/>
+                <Entry Placeholder="CPF" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="4" x:Name="txtCPF"/>
+
+                <Frame Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="4" Margin="10,10,0,10"/>
+                <Entry Placeholder="Data Nascimento" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="4" x:Name="txtDataNascimento"/>
+
+                <Frame Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="4" Margin="10,10,0,10"/>
+                <Entry Placeholder="CEP" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="4" x:Name="txtCEP"/>
+
+                <Frame Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="4" Margin="10,10,0,10"/>
+                <Entry Placeholder="Estado" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="4" x:Name="txtEstado"/>
+
+                <Frame Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2" Margin="10,10,0,10"/>
+                <Entry Placeholder="Cidade" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2" x:Name="txtCidade"/>
+
+                <Frame Grid.Column="2" Grid.Row="8" Grid.ColumnSpan="2" Margin="10,10,0,10"/>
+                <Entry Placeholder="Bairro" Grid.Column="2" Grid.Row="8" Grid.ColumnSpan="2" x:Name="txtBairro"/>
+
+                <Frame Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="3" Margin="10,10,0,10"/>
+                <Entry Placeholder="Rua" Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="3" x:Name="txtRua"/>
+
+                <Frame Grid.Column="3" Grid.Row="9" Margin="10,10,0,10"/>
+                <Entry Placeholder="Numero" Grid.Column="3" Grid.Row="9" x:Name="txtNumero"/>
+
+                <Frame Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="4" Margin="10,10,0,10"/>
+                <Entry Placeholder="Complemento" Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="4" x:Name="txtComplemento"/>
+
+                <Frame Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="2" Margin="10,10,0,10"/>
+                <Entry Placeholder="Voce tem outro animal?" Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="2" x:Name="txtOutroAnimal"/>
+
+                <Frame Grid.Column="2" Grid.Row="11" Grid.ColumnSpan="2" Margin="10,10,0,10"/>
+                <Entry Placeholder="Qual sua renda mensal?" Grid.Column="2" Grid.Row="11" Grid.ColumnSpan="2" x:Name="txtRendaMensal"/>
+
+                <Frame Grid.Column="0" Grid.Row="12" Grid.ColumnSpan="4" Margin="10,10,0,10"/>
+                <Entry Placeholder="Sua casa possui um espaço aberto?" Grid.Column="0" Grid.Row="12" Grid.ColumnSpan="4" x:Name="txtEspacoAberto"/>
+
+                <Button Clicked="AnexarComprovante_Clickd" Text="Anexar Comprovante de Residência" Grid.Column="0" Grid.Row="13" Grid.ColumnSpan="4" BackgroundColor="#5CE1E6" TextColor="#6C3CCB" FontSize="20" Margin="10,10,0,10"/>
+                
+                <Button Clicked="CriarConta_Clicked" Text="Cadastro" Grid.Column="1" Grid.Row="14" BackgroundColor="#5CE1E6" TextColor="#6C3CCB" FontSize="20" Grid.ColumnSpan="2" Margin="0,15,0,0"/>
+                <Button Text="Já possui uma conta?" Grid.Column="0" Grid.Row="15" Grid.ColumnSpan="4" HorizontalOptions="Center" BackgroundColor="Transparent" Clicked="CriarConta_Login"/>
+                <Button Text="Fazer login!" Grid.Column="0" Grid.Row="16" Grid.ColumnSpan="4" HorizontalOptions="Center" BackgroundColor="Transparent" Margin="0,-30,0,0" Clicked="CriarConta_Login"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+
+    <Shell.TitleView>
+        <StackLayout HorizontalOptions="Fill">
+            <Grid ColumnDefinitions="3*,*">
+                <Image Source="Resources/Images/logonome.png" WidthRequest="160" Grid.Column="0"/>
+                <Image Source="Resouces/Images/Logo.png" WidthRequest="50" Grid.Column="1" Margin="20,0,0,0"/>
+            </Grid>
+        </StackLayout>
+    </Shell.TitleView>
+</ContentPage>

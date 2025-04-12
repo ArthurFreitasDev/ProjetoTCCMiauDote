@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoTCCMiauDote.Views.AdicionarAbrigo"
+             Title="AdicionarAbrigo"
+             BackgroundColor="#6C3CCB"
+             Shell.BackgroundColor="#6C3CCB">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#5CE1E6"/>
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="Margin" Value="10,10,0,10"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout Margin="0,0,10,0">
+        <Grid RowDefinitions="*,*,*,*,*,*,*,*,*,*,*" ColumnDefinitions="*,*,*">
+            <Label Text="Adicionar Abrigo" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" HorizontalOptions="Center" TextColor="White" FontSize="30" FontFamily="Arial" Margin="15"/>
+
+            <Frame Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Margin="10,10,0,10"/>
+            <Entry Placeholder="Nome" x:Name="Abrigo_Nome" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3"/>
+
+            <Frame Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Margin="10,10,0,10"/>
+            <Entry Placeholder="Cidade" x:Name="Abrigo_Cidade" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
+
+            <Frame Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="1" Margin="10,10,0,10"/>
+            <Entry Placeholder="Bairro" x:Name="Abrigo_Bairro" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="1"/>
+
+            <Frame Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Margin="10,10,0,10"/>
+            <Entry Placeholder="Rua" x:Name="Abrigo_Rua" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"/>
+
+            <Frame Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="1" Margin="10,10,0,10"/>
+            <Entry Placeholder="Nº" x:Name="Abrigo_Numero" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="1"/>
+
+            <Frame Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" Margin="10,10,0,10"/>
+            <Entry Placeholder="CEP" x:Name="Abrigo_CEP" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3"/>
+
+            <Frame Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="3" Margin="10,10,0,10"/>
+            <Entry Placeholder="Complemento" x:Name="Abrigo_Complemento" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="3"/>
+
+            <Frame Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3" Margin="10,10,0,10"/>
+            <Entry Placeholder="Telefone" x:Name="Abrigo_Telefone" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3"/>
+
+            <Frame Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="3" Margin="10,10,0,10"/>
+            <Entry Placeholder="E-mail" x:Name="Abrigo_Email" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="3"/>
+
+            <Frame Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="3" Margin="10,10,0,10"/>
+            <Entry Placeholder="Crie uma senha" x:Name="Abrigo_CrieUmaSenha" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="3"/>
+            
+            <Button Text="Adicionar" Clicked="AdicionarAbrigo_Clicked"  Grid.Column="1" Grid.Row="9" BackgroundColor="#5CE1E6" TextColor="#6C3CCB" FontSize="20"/>
+
+
+        </Grid>
+    </StackLayout>
+    <Shell.TitleView>
+        <StackLayout HorizontalOptions="Fill">
+            <Grid ColumnDefinitions="3*,*">
+                <Image Source="Resources/Images/logonome.png" WidthRequest="160" Grid.Column="0"/>
+                <Image Source="Resouces/Images/Logo.png" WidthRequest="50" Grid.Column="1" Margin="20,0,0,0"/>
+            </Grid>
+        </StackLayout>
+    </Shell.TitleView>
+</ContentPage>

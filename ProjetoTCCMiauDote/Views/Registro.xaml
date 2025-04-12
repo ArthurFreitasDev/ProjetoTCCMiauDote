@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoTCCMiauDote.Views.Registro"
+             Title="Registro" 
+             Shell.BackgroundColor="#6C3CCB"
+             Loaded="ContentPage_Loaded">
+
+    
+
+    <VerticalStackLayout Margin="10">
+        <Grid RowDefinitions="*,*" ColumnDefinitions="*,*,*">
+            <Frame BackgroundColor="#6C3CCB" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+            <Entry Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Placeholder="Pesquisa:" Margin="0,0,0,10"/>
+            <Label Grid.Row="1" Grid.Column="0" Text="Descricao" HorizontalTextAlignment="Center" FontSize="20" Margin="0,0,2,0"/>
+            <Label Grid.Row="1" Grid.Column="1" Text="Funcionario" HorizontalTextAlignment="Center" FontSize="20" Margin="0,0,2,0"/>
+            <Label Grid.Row="1" Grid.Column="2" Text="Data" HorizontalTextAlignment="Center" FontSize="20"/>
+        </Grid>
+        <ListView x:Name="lst_registros_Registro">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid RowDefinitions="*,*" ColumnDefinitions="*,*,*">
+                            <Label Grid.Row="0" Grid.Column="0" Text="{Binding CaracteristicaRegistro}" FontSize="10"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Nome}"/>
+                            <Label Grid.Row="0" Grid.Column="2" Text="{Binding Data}"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+    
+    <Shell.TitleView>
+        <StackLayout HorizontalOptions="Fill">
+            <Grid ColumnDefinitions="3*,*">
+                <Image Source="Resources/Images/logonome.png" WidthRequest="160" Grid.Column="0"/>
+                <Image Source="Resouces/Images/Logo.png" WidthRequest="50" Grid.Column="1" Margin="20,0,0,0"/>
+            </Grid>
+        </StackLayout>
+    </Shell.TitleView>
+</ContentPage>

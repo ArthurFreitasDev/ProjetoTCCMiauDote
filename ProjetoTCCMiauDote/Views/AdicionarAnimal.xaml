@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoTCCMiauDote.Views.AdicionarAnimal"
+             Title="AdicionarAnimal"
+             BackgroundColor="#6C3CCB"
+             Shell.BackgroundColor="#6C3CCB">
+    
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#5CE1E6"/>
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="Margin" Value="10,10,0,10"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout Margin="0,0,10,0">
+            <Grid RowDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*" ColumnDefinitions="*,*,*">
+                <Label Text="Adicionar Animal" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" HorizontalOptions="Center" TextColor="White" FontSize="30" FontFamily="Arial" Margin="15"/>
+
+                <Frame Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Margin="10,10,0,10"/>
+                <Entry Placeholder="Nome" x:Name="Animal_Nome" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3"/>
+
+                <Frame Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Margin="10,10,0,10"/>
+                <Entry Placeholder="Data Nascimento" x:Name="Animal_DataNascimento" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
+
+                <Frame Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="1" Margin="10,10,0,10"/>
+                <Entry Placeholder="Genero" x:Name="Animal_Genero" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="1"/>
+
+                <Frame Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" Margin="10,10,0,10"/>
+                <Entry Placeholder="Vacinas" x:Name="Animal_Vacinas" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3"/>
+
+                <Frame Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" Margin="10,10,0,10"/>
+                <Entry Placeholder="Doenças" x:Name="Animal_Doencas" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3"/>
+
+                <Frame Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="3" Margin="10,10,0,10"/>
+                <Entry Placeholder="Abrigo" x:Name="Animal_Abrigo" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="3"/>
+
+                <Frame Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2" Margin="10,10,0,10"/>
+                <Entry Placeholder="Porte" x:Name="Animal_Porte" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2"/>
+
+                <Frame Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="1" Margin="10,10,0,10"/>
+                <Entry Placeholder="Raça" x:Name="Animal_Raca" Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="1"/>
+
+                <Frame Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2" Margin="10,10,0,10"/>
+                <Entry Placeholder="Cão/Gato" x:Name="Animal_Tipo" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2"/>
+
+                <Frame Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="1" Margin="10,10,0,10"/>
+                <Entry Placeholder="Cor" x:Name="Animal_Cor" Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="1"/>
+
+                <Frame Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="3" Margin="10,10,0,10"/>
+                <Entry Placeholder="Castrado sim/não" x:Name="Animal_Castrado" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="3"/>
+
+                <Frame Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="3" Margin="10,10,0,10"/>
+                <Entry Placeholder="Descrição" x:Name="Animal_Descricao" Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="3"/>
+
+                <Button Clicked="AdicionarImagemAnimal_Clicked" Text="Adicionar Imagem" Grid.Column="0" Grid.Row="12" Grid.ColumnSpan="3" BackgroundColor="#5CE1E6" TextColor="#6C3CCB" FontSize="20" Margin="10,10,0,10"/>
+
+                <Button Clicked="AdicionarAnimal_Clicked" Text="Adicionar"  Grid.Column="1" Grid.Row="13" BackgroundColor="#5CE1E6" TextColor="#6C3CCB" FontSize="20" Margin="0,0,0,10"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+
+    <Shell.TitleView>
+        <StackLayout HorizontalOptions="Fill">
+            <Grid ColumnDefinitions="3*,*">
+                <Image Source="Resources/Images/logonome.png" WidthRequest="160" Grid.Column="0"/>
+                <Image Source="Resouces/Images/Logo.png" WidthRequest="50" Grid.Column="1" Margin="20,0,0,0"/>
+            </Grid>
+        </StackLayout>
+    </Shell.TitleView>
+</ContentPage>

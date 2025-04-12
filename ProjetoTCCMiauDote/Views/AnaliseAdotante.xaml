@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoTCCMiauDote.Views.AnaliseAdotante"
+             Title="AnaliseAdotante"
+             BackgroundColor="White"
+             Shell.BackgroundColor="#6C3CCB"
+             Loaded="ContentPage_Loaded">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+    </ContentPage.Resources>
+
+
+    <VerticalStackLayout Margin="10">
+        <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*,*,*">
+            <Image Source="{Binding ComprovanteResidencia}" Grid.Row="0" Grid.Column="1"/>
+            <Frame BackgroundColor="#6C3CCB" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
+                <Grid RowDefinitions="*,*,*,*,*,*,*" ColumnDefinitions="*,*">
+                    <Label Text="Nome:" Grid.Row="0" Grid.Column="0" TextColor="White"/>
+                    <Label Text="{Binding Nome}" Grid.Row="0" Grid.Column="1" TextColor="White"/>
+                    <Label Text="Telefone:" Grid.Row="1" Grid.Column="0" TextColor="White"/>
+                    <Label Text="{Binding Telefone}" Grid.Row="1" Grid.Column="1" TextColor="White"/>
+                    <Label Text="Renda:" Grid.Row="2" Grid.Column="0" TextColor="White"/>
+                    <Label Text="{Binding Renda}" Grid.Row="2" Grid.Column="1"/>
+                    <Label Text="CEP:" Grid.Row="3" Grid.Column="0" TextColor="White"/>
+                    <Label Text="{Binding CEP}" Grid.Row="3" Grid.Column="1" TextColor="White"/>
+                    <Label Text="Local do animal:" Grid.Row="4" Grid.Column="0" TextColor="White"/>
+                    <Label Text="{Binding LocalAdequado}" Grid.Row="4" Grid.Column="1" TextColor="White"/>
+                </Grid>
+            </Frame>
+            <Button Text="Aprovar" Grid.Row="2" Grid.Column="0" Clicked="Aprovar_Clicked" BackgroundColor="#5CE1E6" TextColor="#6C3CCB"/>
+            <Button Text="Pronto" Grid.Row="2" Grid.Column="1" Clicked="Pronto_Clicked" BackgroundColor="#5CE1E6" TextColor="#6C3CCB"/>
+            <Button Text="Adotado" Grid.Row="2" Grid.Column="2" Clicked="Adotado_Clicked" BackgroundColor="#5CE1E6" TextColor="#6C3CCB"/>
+            <Button Text="Cancelar" Grid.Row="3" Grid.Column="1" Margin="0,5,0,0" Clicked="Cancelar_Clicked" BackgroundColor="#5CE1E6" TextColor="#6C3CCB"/>
+        </Grid>
+    </VerticalStackLayout>
+    <Shell.TitleView>
+        <StackLayout HorizontalOptions="Fill">
+            <Grid ColumnDefinitions="3*,*">
+                <Image Source="Resources/Images/logonome.png" WidthRequest="160" Grid.Column="0"/>
+                <Image Source="Resouces/Images/Logo.png" WidthRequest="50" Grid.Column="1" Margin="20,0,0,0"/>
+            </Grid>
+        </StackLayout>
+    </Shell.TitleView>
+</ContentPage>

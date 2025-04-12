@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoTCCMiauDote.Views.TelaEstadoAdocaoFuncionario"
+             Title="TelaEstadoAdocaoFuncionario"
+             Loaded="ContentPage_Loaded"
+             Shell.BackgroundColor="#6C3CCB"
+             BackgroundColor="White">
+    <ScrollView>
+        <VerticalStackLayout >
+            <ListView x:Name="lst_animais"
+                HasUnevenRows="True"
+                RowHeight="200"
+                      ItemSelected="lst_animais_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame BackgroundColor="#6C3CCB" CornerRadius="20" WidthRequest="320" HeightRequest="200">
+                                <Grid ColumnDefinitions="*,*,*,*,*,*,*" RowDefinitions="*,*,*,*,*,*,*" HeightRequest="200">
+                                    <Image Source="{Binding Foto}" Grid.Column="0" Grid.Row="0" Grid.RowSpan="7" Grid.ColumnSpan="3"/>
+                                    <Label Text="{Binding Nome}" Grid.Row="0" Grid.Column="3" FontSize="20" Grid.ColumnSpan="2" Margin="10,0,0,0" TextColor="White"/>
+                                    <Label Text="Status Adoção:" Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="3" FontSize="20" Margin="10,0,0,0" TextColor="White"/>
+                                    <Label Text="Verificando" Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="4" Margin="0,5,0,0" FontSize="15" TextColor="White"/>
+                                    <Label Text="Aprovada" Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="2" Margin="0,5,0,0" TextColor="White"/>
+                                    <Label Text="Pronto" Grid.Row="4" Grid.Column="4" Grid.ColumnSpan="3" Margin="0,5,0,0" TextColor="White"/>
+                                    <Label Text="Adotado" Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="2" Margin="0,5,0,0" TextColor="White"/>
+                                    <Image Source="{Binding BolaEstadoAdocao1}" Grid.Column="3" Grid.Row="2" WidthRequest="30"/>
+                                    <Image Source="{Binding BolaEstadoAdocao2}" Grid.Column="3" Grid.Row="3" WidthRequest="30"/>
+                                    <Image Source="{Binding BolaEstadoAdocao3}" Grid.Column="3" Grid.Row="4" WidthRequest="30"/>
+                                    <Image Source="{Binding BolaEstadoAdocao4}" Grid.Column="3" Grid.Row="5" WidthRequest="30"/>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </VerticalStackLayout>
+    </ScrollView>
+    <Shell.TitleView>
+        <StackLayout HorizontalOptions="Fill">
+            <Grid ColumnDefinitions="3*,*">
+                <Image Source="Resources/Images/logonome.png" WidthRequest="160" Grid.Column="0"/>
+                <Image Source="Resouces/Images/Logo.png" WidthRequest="50" Grid.Column="1" Margin="20,0,0,0"/>
+            </Grid>
+        </StackLayout>
+    </Shell.TitleView>
+</ContentPage>
