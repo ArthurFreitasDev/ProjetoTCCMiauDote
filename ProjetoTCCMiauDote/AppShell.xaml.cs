@@ -14,7 +14,7 @@ namespace ProjetoTCCMiauDote
 
         private async void Shell_Loaded(object sender, EventArgs e)
         {
-            while(1 == 1)
+            while(true)
             {
                 string ValidacaoLogin = App.User_Login.GetLogin();
                 var allpessoas = await App.DbPessoa.GetAllPessoas();
